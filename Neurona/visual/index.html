@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Neurona Artificial - Visualización</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Neurona Artificial — Aprendizaje Visual</h1>
+
+<div class="container">
+
+  <!-- Panel de controles -->
+  <div class="panel">
+
+    <h2>Entradas</h2>
+    <label>
+      Ingreso (x1)
+      <input type="range" min="0" max="100" value="50" id="x1">
+    </label>
+
+    <label>
+      Historial (x2)
+      <input type="range" min="0" max="10" value="5" id="x2">
+    </label>
+
+    <h2>Parámetros</h2>
+    <label>w1 <input type="number" step="0.1" value="0.6" id="w1"></label>
+    <label>w2 <input type="number" step="0.1" value="1.2" id="w2"></label>
+    <label>bias <input type="number" step="0.1" value="-30" id="bias"></label>
+
+    <h2>Aprendizaje</h2>
+    <label>
+      Learning rate
+      <input type="number" step="0.001" value="0.01" id="lr">
+    </label>
+
+    <button id="trainBtn">Entrenar 1 paso</button>
+    <button id="autoTrainBtn">Entrenamiento automático</button>
+
+  </div>
+
+  <!-- Panel visual -->
+  <div class="visual">
+
+    <div id="circle">?</div>
+    <p id="result"></p>
+    <p id="zValue"></p>
+
+    <canvas id="canvas" width="400" height="400"></canvas>
+
+  </div>
+
+</div>
+
+<script src="script_sigmoid.js"></script>
+</body>
+</html>
