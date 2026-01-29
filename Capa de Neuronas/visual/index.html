@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Red neuronal visual interactiva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🧠 Red neuronal visual</h1>
+
+<div class="panel">
+  <button id="toggle">▶ Entrenar</button>
+  <label>
+    Velocidad:
+    <input type="range" id="speed" min="1" max="50" value="10">
+  </label>
+  <span id="epoch">Epoch: 0</span>
+  <span id="error">Error: 0.00</span>
+</div>
+
+<canvas id="canvas" width="520" height="520"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
